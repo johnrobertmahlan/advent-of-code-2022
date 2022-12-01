@@ -1,3 +1,3 @@
 # Advent of Code 2022
 
-Solve problems.
+Maybe this is the year I don't fall behind so far that I just throw up my hands and quit.

@@ -36,21 +36,6 @@ LOSE_MAPPER = {
   'C' => 'Y'
 }
 
-# Suppose my opponent throws A (rock) and I have a Y
-# this means I need to draw
-# which means I need to throw rock
-# Suppose instead my opponent throws B (paper) and I have an X
-# this means I need to lose
-# which means
-
-# X = lose
-# Y = draw
-# Z = win
-
-# now i need to figure out what to throw!
-
-
-
 class Game
   def initialize(throws)
     @my_throw = throws[0]

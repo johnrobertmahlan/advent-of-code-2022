@@ -97,9 +97,15 @@ module Calculator
       stack_to_move_from = moves[1].to_i - 1
       stack_to_move_to = moves.last.to_i - 1
 
-      number_of_crates_to_move.times do |move|
-        popped = stacks[stack_to_move_from].pop
+      temp_stack = []
 
+      number_of_crates_to_move.times do |time|
+        popped = stacks[stack_to_move_from].pop
+        temp_stack.push(popped)
+      end
+
+      number_of_crates_to_move.times do |time|
+        popped = temp_stack.pop
         stacks[stack_to_move_to].push(popped)
       end
     end
